@@ -22,11 +22,12 @@ img {
 
 
 .header {
-	background: rgba(255,255,255,0.8);
+	background: rgba(255,255,255,0.85);
 	position: fixed;
 	top: 0;
 	width: 100%;
 	z-index: 1000;
+	transition: all 0.2s ease-in-out;
 }
 
 .header .wrapper {
@@ -42,15 +43,15 @@ img {
 
 .header .logo {
 	float: left;
-	padding: 20px 0;
+	padding: 16px 0 20px 0;
 	width: 190px;
 	transition: all 0.2s ease-in-out;
+	border-bottom: 4px solid transparent;
 }
 
 .header .logo:hover {
 	opacity: 0.8;
-	padding-bottom: 16px;
-	border-bottom: 4px solid #bb5536;
+	border-bottom-color: #bb5536;
 }
 
 .header .nav {
@@ -108,13 +109,18 @@ img {
 	box-shadow: 0 0 20px rgba(0,0,0,0.1);
 }
 
+.scrolled.home .header {
+	background: rgba(255,255,255,0.7);
+}
+
 .scrolled .header .logo {
-	width: 124px;
-	padding: 16px 0;
+	width: 116px;
+	padding: 6px 0 8px 0;
 }
 
 .scrolled .header .menu > li > a {
-	line-height: 37px;
+	line-height: 28px;
+	padding: 12px 20px;
 }
 
 /* ********************************************** */
