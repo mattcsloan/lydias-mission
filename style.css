@@ -5,6 +5,10 @@ body {
 	font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 
+img {
+	display: block;
+}
+
 .wrapper {
 	width: 100%;
 	max-width: 1200px;
@@ -12,8 +16,17 @@ body {
 	padding: 20px;
 }
 
+/* ********************************************** */
+/* ******************* HEADER ******************* */
+/* ********************************************** */
+
+
 .header {
-	background: #fff;
+	background: rgba(255,255,255,0.9);
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
 }
 
 .header .wrapper {
@@ -63,7 +76,7 @@ body {
 }
 
 .header .menu > li > a {
-	line-height: 74px;
+	line-height: 69px;
 }
 
 .header .menu > li:first-child {
@@ -72,7 +85,7 @@ body {
 
 .header .menu > li > a:hover,
 .header .menu li.current-menu-item > a {
-	line-height: 66px;
+	line-height: 61px;
 	border-top: 4px solid transparent;
 }
 
@@ -92,6 +105,11 @@ body {
 	border-bottom: 4px solid #bb5536;
 }
 
+/* ********************************************** */
+/* ******************* FOOTER ******************* */
+/* ********************************************** */
+
+
 .footer {
 	background: #444;
 	color: #999;
@@ -101,3 +119,29 @@ body {
 	color: #fff;
 }
 
+/* ********************************************** */
+/* ******************** HERO ******************** */
+/* ********************************************** */
+
+.hero {
+	position: relative;
+}
+
+.hero img {
+	width: 100%;
+}
+
+.hero .section-title {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+/* ********************************************** */
+/* ****************** HOME PAGE ***************** */
+/* ********************************************** */
+
+.home .header {
+	background: transparent;
+}
