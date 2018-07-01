@@ -1,7 +1,6 @@
 body {
 	margin: 0;
 	padding: 0;
-	background: #eee;
 	font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 
@@ -22,7 +21,7 @@ img {
 
 
 .header {
-	background: rgba(255,255,255,0.9);
+	background: rgba(255,255,255,0.8);
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -136,6 +135,18 @@ img {
 	bottom: 0;
 	left: 0;
 	width: 100%;
+}
+
+.section-title {
+	background: url(img/section-title-bg.jpg) repeat center center;
+	text-align: center;
+	font-size: 36px;
+	color: #bb5536;
+}
+
+.section-title .wrapper {
+	padding-top: 36px;
+	padding-bottom: 36px;
 }
 
 /* ********************************************** */
