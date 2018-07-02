@@ -1,0 +1,243 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+a {
+	color: #bb5536;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #9d4327;
+	text-decoration: underline;
+}
+
+img {
+	display: block;
+	max-width: 100% !important;
+}
+
+a.btn {
+	padding: 12px 16px;
+	color: #fff;
+	background: #bb5536;
+	border-radius: 4px;
+	border: 0;
+	line-height: 1em;
+	text-transform: uppercase;
+}
+
+a.btn:hover {
+	background-color: #9d4327;
+	box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+
+.wrapper {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+/* ********************************************** */
+/* ******************* HEADER ******************* */
+/* ********************************************** */
+
+
+.header {
+	background: rgba(255,255,255,0.85);
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+	transition: all 0.4s ease-in-out;
+}
+
+.header .wrapper {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.header .wrapper:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.header .logo {
+	float: left;
+	padding: 16px 0 20px 0;
+	width: 190px;
+	transition: all 0.4s ease-in-out;
+	border-bottom: 4px solid transparent;
+}
+
+.header .logo:hover {
+	opacity: 0.8;
+	border-bottom-color: #bb5536;
+}
+
+.header .nav {
+	float: right;
+	font-size: 18px;
+}
+
+.nav .menu-link {
+	display: none;
+}
+
+.menu {
+	margin: 0;
+	padding: 0;
+}
+
+.menu li {
+	float: left;
+	list-style: none;
+	position: relative;
+}
+
+.menu li .sub-menu {
+	display: none;
+}
+
+.header .menu > li > a {
+	line-height: 61px;
+	transition: all 0.4s ease-in-out;
+}
+
+.header .menu > li:first-child {
+	display: none;
+}
+
+.menu a {
+	display: block;
+	padding: 20px;
+	color: #3e3e3f;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 600;
+	border-top: 4px solid transparent;
+	border-bottom: 4px solid transparent;
+}
+
+.menu a:hover,
+.menu li.current-menu-item > a {
+	text-decoration: none;
+	color: #bb5536;
+	border-bottom-color: #bb5536;
+}
+
+.header .menu .btn a {
+	padding: 12px 16px;
+	color: #fff;
+	background: #bb5536;
+	border-radius: 4px;
+	border: 0;
+	margin: 33px 10px;
+	line-height: 1em;
+}
+
+.header .menu .btn a:hover {
+	background-color: #9d4327;
+	box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.header .icon-search {
+	float: right;
+	color: #3e3e3f;
+	border-top: 4px solid transparent;
+	border-bottom: 4px solid transparent;
+	padding: 42px 16px 43px;
+	transition: all 0.4s ease-in-out;
+}
+
+.header .icon-search:hover {
+	color: #bb5536;
+	text-decoration: none;
+	border-bottom-color: #bb5536;
+}
+
+.scrolled .header {
+	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.scrolled.home .header {
+	background: rgba(255,255,255,0.7);
+}
+
+.scrolled .header .logo {
+	width: 116px;
+	padding: 6px 0 8px 0;
+}
+
+.scrolled .header .menu > li > a {
+	line-height: 28px;
+	padding: 12px 20px;
+}
+
+.scrolled .header .menu .btn a {
+	line-height: 1em;
+	padding: 12px 16px;
+	margin: 9px 10px;
+}
+
+.scrolled .header .icon-search {
+	padding: 18px 16px;
+}
+
+/* ********************************************** */
+/* ******************* FOOTER ******************* */
+/* ********************************************** */
+
+
+.footer {
+	background: #444;
+	color: #999;
+}
+
+.footer .menu a {
+	color: #fff;
+}
+
+/* ********************************************** */
+/* ******************** HERO ******************** */
+/* ********************************************** */
+
+.hero {
+	position: relative;
+}
+
+.hero img {
+	width: 100%;
+}
+
+.hero .section-title {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+.section-title {
+	background: url(img/section-title-bg.jpg) repeat center center;
+	text-align: center;
+	font-size: 36px;
+	color: #bb5536;
+}
+
+.section-title .wrapper {
+	padding-top: 36px;
+	padding-bottom: 36px;
+}
+
+/* ********************************************** */
+/* ****************** HOME PAGE ***************** */
+/* ********************************************** */
+
+.home .header {
+	background: transparent;
+}
