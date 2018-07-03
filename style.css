@@ -47,6 +47,10 @@ a.btn:hover {
 	padding: 20px;
 }
 
+.logo-bg {
+	background: url(img/section-title-bg.jpg) repeat center center;
+}
+
 /* ********************************************** */
 /* ******************* HEADER ******************* */
 /* ********************************************** */
@@ -272,3 +276,60 @@ a.btn:hover {
 .home .header {
 	background: transparent;
 }
+
+/* ********************************************** */
+/* ****************** COLUMNS ******************* */
+/* ********************************************** */
+
+.columns /* default is 4 wide */
+{
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2.5%;
+}
+
+.columns.two-wide
+{
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 4%;
+}
+
+.columns.three-wide
+{
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3%;
+}
+
+.columns.five-wide
+{
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 2.5%;
+}
+
+.columns.custom-alignment .col
+{
+  display: flex;
+}
+
+.columns.vertical-center .col
+{
+  align-items: center;
+}
+
+.columns.horizontal-center .col
+{
+  justify-content: center;
+  text-align: center;
+}
+
+.columns.horizontal-right .col
+{
+  justify-content: flex-end;
+  text-align: right;
+}
+
