@@ -63,11 +63,14 @@ a.btn:hover {
 	font-family: 'Dancing Script', cursive;
 	color: #0078ae;
 	font-weight: 700;
+	padding-bottom: 16px;
+	background: url(img/logo-underline.svg) no-repeat bottom center;
 }
 
 .fancy-text:hover {
 	color: #004260;
 	text-decoration: none;
+	background-image: url(img/logo-underline-hover.svg);
 }
 
 /* ********************************************** */
