@@ -25,11 +25,27 @@ img {
 	max-width: 100% !important;
 }
 
+input[type=text] {
+	display: block;
+	border: 1px solid #ddd;
+	padding: 6px 12px;
+	font-size: 21px;
+	font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+input[type=text]:focus {
+	outline: none;
+	border-color: #999;
+	box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
 p {
 	margin: 0 0 24px 0;
 }
 
-a.btn {
+a.btn,
+input.btn,
+button {
 	padding: 16px 32px;
 	color: #fff;
 	background: #bb5536;
@@ -41,12 +57,16 @@ a.btn {
 	font-size: 22px;
 	display: inline-block;
 	transition: all 0.4s ease-in-out;
+	font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 
-a.btn:hover {
+a.btn:hover,
+input.btn:hover,
+button:hover {
 	background-color: #9d4327;
 	box-shadow: 0 0 8px rgba(0,0,0,0.1);
 	text-decoration: none;
+	cursor: pointer;
 }
 
 .wrapper {
@@ -300,6 +320,20 @@ a.btn:hover {
 	color: #fff;
 }
 
+.mission-statement {
+	background: #f0f0f0;
+	font-size: 18px;
+	color: #333;
+	line-height: 1.5em;
+}
+
+.mission-statement h2 {
+	font-size: 24px;
+	color: #bb5536;
+	font-style: oblique;
+	margin-bottom: 16px;
+}
+
 /* ********************************************** */
 /* ******************** HERO ******************** */
 /* ********************************************** */
@@ -398,9 +432,12 @@ a.btn:hover {
 /* ************* Blog Listings Pages ************ */
 /* ********************************************** */
 
-.pagination.section-title {
+.pagination {
 	font-size: 18px;
 	color: #4d4d4f;
+	text-align: center;
+	border-top: 1px solid #ddd;
+	background: url(img/section-title-bg-white.jpg) repeat center center;
 }
 
 .pagination .btn {
@@ -409,11 +446,12 @@ a.btn:hover {
 }
 
 .listings-grid {
-	padding-top: 60px;
+	padding-top: 50px;
 	padding-bottom: 60px;
 	display: grid;
 	grid-gap: 5px;
 	grid-template-columns: 1fr 1fr 1fr;
+	clear: both;
 }
 
 .listings-grid > .featured {
@@ -512,9 +550,48 @@ a.btn:hover {
 .subscribe-block h2 {
 	text-transform: uppercase;
 	color: #bb5536;
+	margin-bottom: 16px;
+}
+
+.subscribe-block input {
+	width: 100%;
+	box-sizing: border-box;
+	margin-bottom: 24px;
 }
 
 .subscribe-block-content {
 	padding: 24px;
+}
+
+.popular-tags {
+	color: #888;
+	margin: 40px 0 0 0;
+	float: right;
+}
+
+.popular-tags span {
+	margin-right: 16px;
+	line-height: 36px;
+}
+
+.tag {
+	border-radius: 18px;
+	color: #3b85a7;
+	background: #dfeef5;
+	line-height: 1em;
+	padding: 8px 24px;
+	font-size: 18px;
+	margin-right: 16px;
+}
+
+.tag:hover {
+	color: #fff;
+	background: #3b85a7;
+	box-shadow: 0 0 4px rgba(0,0,0,0.1);
+	text-decoration: none;
+}
+
+.popular-tags a:last-child {
+	margin-right: 0;
 }
 
