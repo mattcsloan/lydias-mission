@@ -330,6 +330,7 @@ button:hover {
 .header .icon-search {
 	float: right;
 	color: #3e3e3f;
+	width: 16px;
 	border-top: 4px solid transparent;
 	border-bottom: 4px solid transparent;
 	padding: 38px 16px 39px;
@@ -396,6 +397,12 @@ button:hover {
 	color: #bb5536;
 	font-style: oblique;
 	margin-bottom: 16px;
+}
+
+.section.mission-statement .wrapper
+{
+	padding-top: 24px;
+	padding-bottom: 24px;
 }
 
 /* ********************************************** */
