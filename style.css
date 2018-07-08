@@ -15,13 +15,50 @@ a:hover {
 	text-decoration: underline;
 }
 
+h2 {
+	font-weight: 600;
+	font-size: 28px;
+}
+
+h3 {
+	font-size: 18px;
+	color: #bb5536;
+	font-weight: 400;
+	margin: 0 0 24px 0;
+}
+
 img {
 	display: block;
 	max-width: 100% !important;
 }
 
-a.btn {
-	padding: 20px 32px;
+input[type=text] {
+	display: block;
+	border: 1px solid #ddd;
+	padding: 6px 12px;
+	font-size: 21px;
+	font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+input[type=text]:focus {
+	outline: none;
+	border-color: #999;
+	box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+p {
+	margin: 0 0 24px 0;
+	line-height: 1.6em;
+}
+
+strong {
+	font-weight: 600;
+}
+
+a.btn,
+input.btn,
+button {
+	padding: 16px 32px;
 	color: #fff;
 	background: #bb5536;
 	border-radius: 4px;
@@ -32,12 +69,16 @@ a.btn {
 	font-size: 22px;
 	display: inline-block;
 	transition: all 0.4s ease-in-out;
+	font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 
-a.btn:hover {
+a.btn:hover,
+input.btn:hover,
+button:hover {
 	background-color: #9d4327;
 	box-shadow: 0 0 8px rgba(0,0,0,0.1);
 	text-decoration: none;
+	cursor: pointer;
 }
 
 .wrapper {
@@ -45,6 +86,58 @@ a.btn:hover {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 20px;
+}
+
+.content ul
+{
+  margin: 36px 0;
+  padding: 0;
+  list-style: none;
+  clear: both;
+  columns: 2;
+}
+
+.content ul.single-column
+{
+  columns: 1;
+}
+
+.content ul ul {
+	margin: 12px 0;
+	columns: 1;
+}
+
+.content ul li
+{
+  padding: 0 0 0 20px;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.content ul li:before
+{
+  content: '';
+  width: 6px;
+  height: 6px;
+  background: #bb5536;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 10px 16px 0 0;
+}
+
+.content ol
+{
+  margin: 42px 0;
+  padding: 0;
+  clear: both;
+}
+
+.content ol li
+{
+  margin-bottom: 12px;
+  margin-left: 16px;
 }
 
 .section .wrapper {
@@ -237,6 +330,7 @@ a.btn:hover {
 .header .icon-search {
 	float: right;
 	color: #3e3e3f;
+	width: 16px;
 	border-top: 4px solid transparent;
 	border-bottom: 4px solid transparent;
 	padding: 38px 16px 39px;
@@ -289,6 +383,26 @@ a.btn:hover {
 
 .footer .menu a {
 	color: #fff;
+}
+
+.mission-statement {
+	background: #f0f0f0;
+	font-size: 18px;
+	color: #333;
+	line-height: 1.5em;
+}
+
+.mission-statement h2 {
+	font-size: 24px;
+	color: #bb5536;
+	font-style: oblique;
+	margin-bottom: 16px;
+}
+
+.section.mission-statement .wrapper
+{
+	padding-top: 24px;
+	padding-bottom: 24px;
 }
 
 /* ********************************************** */
@@ -347,6 +461,13 @@ a.btn:hover {
 	padding-bottom: 36px;
 }
 
+.section-title span {
+	display: block;
+	font-size: 18px;
+	color: #777;
+	font-weight: 600;
+}
+
 /* ********************************************** */
 /* ****************** HOME PAGE ***************** */
 /* ********************************************** */
@@ -383,4 +504,244 @@ a.btn:hover {
 	border: 4px solid #bb5536;
 	margin: 0 auto;
 	width: 80%;
+}
+
+/* ********************************************** */
+/* ************* Blog Listings Pages ************ */
+/* ********************************************** */
+
+.pagination {
+	font-size: 18px;
+	color: #4d4d4f;
+	text-align: center;
+	border-top: 1px solid #ddd;
+	background: url(img/section-title-bg-white.jpg) repeat center center;
+	box-shadow: 0 0 24px rgba(0,0,0,0.05);
+}
+
+.pagination .btn {
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+.listings-grid {
+	padding-top: 50px;
+	padding-bottom: 60px;
+	display: grid;
+	grid-gap: 5px;
+	grid-template-columns: 1fr 1fr 1fr;
+	clear: both;
+}
+
+.listings-grid > .featured {
+	grid-column: span 2;
+}
+
+.article {
+	position: relative;
+	overflow: hidden;
+}
+
+.article.intro .article-content {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: rgba(0,0,0,0.8);
+	color: #fff;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.article.intro .article-content h2 {
+	font-size: 24px;
+	margin: 0 0 8px 0;
+	font-weight: 600;
+}
+
+.article.intro .article-content h2 a {
+	display: block;
+}
+
+.article.intro .article-content p {
+	height: 0;
+	overflow: hidden;
+	margin: 0;
+	opacity: 0;
+	transition: all 0.4s ease-in-out;
+}
+
+.article.intro .article-content .article-meta {
+	
+	line-height: 37px;
+	color: #e3e3e3;
+	font-size: 13px;
+}
+
+.article.intro a {
+	color: #fff;
+}
+
+.article.intro a img {
+	transition: all 0.2s ease-in-out;
+}
+
+.article.intro a:hover {
+	color: #ddd;
+}
+
+.article.intro a:hover img {
+	opacity: 0.8;
+	transform: scale(1.1);
+}
+
+.article.intro a.fancy-text {
+	font-size: 24px;
+	float: right;
+	height: 0;
+	overflow: hidden;
+	transition: all 0.2s ease-in-out;
+	padding: 0;
+	opacity: 0;
+}
+
+.article.intro:hover .article-content a.fancy-text {
+	padding-bottom: 8px;
+	height: auto;
+	opacity: 1;
+}
+
+.article.intro:hover .article-content p {
+	height: auto;
+	margin: 0 0 8px 0;
+	opacity: 1;
+}
+
+.subscribe-block {
+	color: #3b3b3c;
+	font-size: 24px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.subscribe-block h2 {
+	text-transform: uppercase;
+	color: #bb5536;
+	margin-bottom: 16px;
+}
+
+.subscribe-block input {
+	width: 100%;
+	box-sizing: border-box;
+	margin-bottom: 24px;
+}
+
+.subscribe-block-content {
+	padding: 24px;
+}
+
+.popular-tags {
+	color: #888;
+	margin: 40px 0 0 0;
+	float: right;
+}
+
+.popular-tags span {
+	margin-right: 16px;
+	line-height: 36px;
+}
+
+.tag {
+	border-radius: 18px;
+	color: #3b85a7;
+	background: #dfeef5;
+	line-height: 1em;
+	padding: 8px 24px;
+	font-size: 18px;
+	margin-right: 16px;
+}
+
+.tag:hover {
+	color: #fff;
+	background: #3b85a7;
+	box-shadow: 0 0 4px rgba(0,0,0,0.1);
+	text-decoration: none;
+}
+
+.popular-tags a:last-child {
+	margin-right: 0;
+}
+
+/* ********************************************** */
+/* ************* Blog Article Pages ************* */
+/* ********************************************** */
+
+.article.full > .wrapper {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.article .wrapper {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+.article.full {
+	font-size: 18px;
+}
+
+.media-gallery {
+	background: url(img/section-title-bg-dark.jpg) repeat center center;
+}
+
+.media-gallery .wrapper {
+	display: flex;
+	padding-top: 0;
+	padding-bottom: 0;
+	transform: scale(1.1);
+}
+
+.media-gallery a {
+	border: 3px solid transparent;
+}
+
+.media-gallery img {
+	box-sizing: border-box;
+	box-shadow: 0 0 24px rgba(0,0,0,0.08);
+	transition: all 0.2s ease-in-out;
+}
+
+.media-gallery a:hover img {
+	transform: scale(1.02);
+}
+
+.article .wrapper + .wrapper.author-info {
+	padding-top: 0;
+}
+
+.author-block {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	box-shadow: 0 0 36px rgba(0,0,0,0.05);
+}
+
+.author-content {
+	padding: 20px;
+}
+
+.author-content p {
+	margin-bottom: 12px;
+	font-size: 16px;
+}
+
+.author-block img {
+	padding: 20px 0 20px 20px;
+	box-sizing: border-box;
+}
+
+.author-name {
+	font-size: 24px;
+	font-weight: 600;
 }
