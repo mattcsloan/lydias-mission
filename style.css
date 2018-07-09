@@ -114,7 +114,8 @@ button:hover {
   columns: 1;
 }
 
-.content ul ul {
+.content ul ul,
+.content ol ol {
 	margin: 12px 0;
 	columns: 1;
 }
@@ -322,7 +323,6 @@ span.fancy-text:hover {
 
 .menu a {
 	display: block;
-	font-weight: 700;
 	padding: 20px;
 	color: #3e3e3f;
 	text-transform: uppercase;
