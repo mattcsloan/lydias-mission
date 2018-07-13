@@ -594,3 +594,17 @@
 		float: none;
 	}
 }
+
+@media all and (max-width: 400px) {
+	.article + .pagination .btn,
+	.article + .pagination .btn:last-child {
+		font-size: 13px;
+		margin: 0;
+		padding: 12px 18px;
+		float: left;
+	}
+
+	.article + .pagination .btn:last-child {
+		float: right;
+	}
+}
