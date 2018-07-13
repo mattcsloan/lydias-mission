@@ -450,7 +450,7 @@
 	}
 
 	.article.intro {
-		max-width: 500px;
+		max-width: 400px;
 		margin: 4px auto;
 	}
 
@@ -461,22 +461,6 @@
 	.article.intro .article-content h2 {
 		font-size: 18px;
 		margin: 0;
-	}
-
-	.subscribe-block {
-		font-size: 16px;
-	}
-
-	.subscribe-block h2 {
-		margin: 2px 0 12px 0;
-	}
-
-	.subscribe-block input {
-		margin-bottom: 16px;
-	}
-
-	.subscribe-block-content {
-		padding: 16px;
 	}
 
 	.popular-tags {
