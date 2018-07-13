@@ -156,21 +156,43 @@
 	.menu-main-navigation-container
 	{
 		clear: both;
+		border-top: 1px solid #eee;
 	}
 
 	.nav .menu-link {
 		float: right;
 		display: block;
 		text-transform: uppercase;
-		padding: 19px 20px;
+		padding: 21px 20px 21px 52px;
 		color: #3e3e3f;
 		text-decoration: none;
 		font-weight: 600;
 		font-size: 18px;
+		position: relative;
+		transition: all 0.4s ease-in-out;
+		background: #fff;
+		border-left: 1px solid #eee;
+	}
+
+	.nav .menu-link:before {
+		content: "\e9bd";
+		font-family: 'icomoon' !important;
+		font-size: 24px;
+		position: absolute;
+		left: 20px;
+		top: 50%;
+		transform: translateY(-50%);
+		color: #bbb;
+		transition: all 0.4s ease-in-out;
 	}
 
 	.nav .menu-link:hover {
 		color: #bb5536;
+		background: #fafafa;
+	}
+
+	.nav .menu-link:hover:before {
+		color: #999;
 	}
 
 	.header .menu {
