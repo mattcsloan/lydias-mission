@@ -39,6 +39,10 @@ img {
 	max-width: 100% !important;
 }
 
+input {
+    -webkit-appearance: none;
+}
+
 input[type=text] {
 	display: block;
 	border: 1px solid #ddd;
