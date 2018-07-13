@@ -331,7 +331,8 @@
 	}
 
 	.section-title {
-		font-size: 18px;
+		font-size: 21px;
+		line-height: 1.1em;
 	}
 
 	.section-title .wrapper {
