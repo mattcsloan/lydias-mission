@@ -1,0 +1,57 @@
+body {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+footer {
+  background: #444;
+  display: flex;
+}
+
+div {
+  margin: 30px;
+}
+div .container {
+  display: flex;
+  flex-direction: column;
+}
+footer div label {
+  display: block;
+  color: white;
+  font-size: 18px;
+}
+
+footer div input{
+  border-radius: 4px;
+  margin: 0px;
+  font-size: 20px;
+  border: none;
+  text-align: center;
+}
+footer div button {
+  background:#bb5536;
+  font-size: 20px;
+  margin-left: 0px;
+  color: #fff;
+  border: none;
+}
+
+.fa{
+  color: white;
+  font-size: 2em;
+  padding-right: 10px;
+  text-decoration: none;
+
+}
+
+.copyright {
+  margin: 40px 0px 0px 0px;
+}
+
+footer div p {
+  margin: 5px 0px 0px 0px;
+  color: #999;
+  margin-left: 20px;
+}
+
+footer form +form{
+  text-align: right;
+}
