@@ -75,10 +75,9 @@ $(window).scroll(function() {
   toggleScrolledClass();
 });
 
-var headerHeight = 104;
-
 function toggleScrolledClass() {
-  if($(window).scrollTop() > headerHeight) {
+  var headerHeight = $('.header').outerHeight();
+  if($(window).scrollTop() > headerHeight - 10) {
     $('body').addClass('scrolled');
   } else {
     $('body').removeClass('scrolled');

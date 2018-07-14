@@ -469,6 +469,12 @@ span.fancy-text:hover {
 	position: relative;
 }
 
+.hero .wrapper:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
 .hero-content {
 	background: rgba(0,0,0,0.3);
 	padding: 30px;
@@ -485,6 +491,10 @@ span.fancy-text:hover {
 .hero.content-left .hero-content {
 	margin-right: 0;
 	float: left;
+}
+
+.hero-content p:last-child {
+	margin-bottom: 0;
 }
 
 .hero.white-overlay .hero-content,
@@ -825,6 +835,7 @@ span.fancy-text:hover {
 
 .article.intro a img {
 	transition: all 0.2s ease-in-out;
+	width: 100%;
 }
 
 .article.intro a:hover {
